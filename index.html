@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id ="container">
+        <h1> Expense Tracker</h1>
+       
+          <form>
+            <br/>
+           <label for ="amount">Enter amout that you spend on this </label>
+         
+           <input id="amount"  name="amount" value="">
+           <br/>
+           <label for ="desc">write Description </label>
+           <input id="desc" name ="desc" value ="">
+           <br/>
+           <label for="typeofExpense">Choose Expense Type</label>
+           <input  id="typeofExpense" list="choose" name="expenseType" value="">
+           <datalist id="choose">
+            <option value="Movie"></option>
+            <option value="Party"></option>
+            <option value="Bills"></option>
+
+           </datalist>
+           <button type="submit">Save</button>
+
+          </form>
+
+
+     
+    </div>
+    <ul id="display">
+        
+    </ul>
+  
+
+    <script src="index.js"></script>
+</body>
+</html>
